@@ -1,0 +1,13 @@
+<num_classes 변경> +1
+선택한 모델의 configuration
+mmdet/models/mask_heads/fcn_mask_head.py
+mmdet/models/mask_heads/maskiou_head.py
+mmdet/models/anchor_heads/ssd_head.py
+mmdet/models/bbox_heads/bbox_head.py
+
+<cmd>
+python tools\train.py configs\~~.py
+./tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM}
+
+<eval>
+./tools/dist_test.sh configs/solov2/x5_solov2_r101_dcn_fpn_8gpu_3x_custom.py work_dirs/solov2_release_r101_dcn_fpn_8gpu_3x/epoch_39.pth 8 --show --out results_solo.pkl --eval segm

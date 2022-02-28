@@ -1,0 +1,40 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (eval_dataset.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  jsoncpp.cpp
+  yolo_console_dll.cpp
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(76): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(105): warning C4244: '*=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(153): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(636): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(659): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(661): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(677): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(747): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(748): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(751): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(752): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(761): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(762): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(763): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(764): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(782): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(783): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(784): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(785): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(822): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(823): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(824): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(825): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(826): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(827): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(863): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(875): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(879): warning C4018: '>': signed/unsigned mismatch
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(880): warning C4018: '>': signed/unsigned mismatch
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(906): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(912): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ycs\Desktop\darknet-master\darknet-master\include\yolo_v2_class.hpp(937): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  Generating code
+  All 1573 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  yolo_console_dll.vcxproj -> C:\Users\ycs\Desktop\darknet-master\darknet-master\build\darknet\x64\evalline_dataset.exe
+  yolo_console_dll.vcxproj -> C:\Users\ycs\Desktop\darknet-master\darknet-master\build\darknet\x64\evalline_dataset.pdb (Full PDB)
