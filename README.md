@@ -4,3 +4,7 @@ Establishment of multimodality datasets for diagnosis and treatment monitoring o
 ## Demo Video
 https://user-images.githubusercontent.com/100255173/156266423-fd254b86-9cdc-4aa5-87b6-c2ca4e4bcf0b.mp4
 
+## X-Ray Auto Segmentation
+![image01](https://user-images.githubusercontent.com/100255173/156273017-ba91890b-a486-44db-b4e8-9c5680f658df.png)
+X-Ray Auto Segmentation의 상세한 구조는 위의 그림과 같다. 먼저 백본 네트워크로 Feature Pyramid Networks를 사용한다. 이는 다양한 스케일에서도 semantic 정보를 잘 담고 있는 feature map 뽑아낼 수 있는 특징을 가지고 있다. 이 때문에 작은 객체에서도 탐지할 수 있다. 이어서 이미지에서 직접적으로 instance의 segment map를 찾아내기 위해 object의 크기와 위치에 따라 나누어 병렬도 동시 예측을 진행한다. 주어진 이미지를 SxS의 grid로 나누고, 예측해야 하는 object의 중심점이 grid cell에 들어가면 해당 object의 segment를 예측할 준비를 한다. 예를 들어 하나의 object의 중심이 grid cell에 들어가게 되면, 그 cell은 해당 object의 category와 instance mask를 예측해야 한다. grid 관점에서 network를 보면 각각의 grid cell은kernel branch에서 D개의 category 확률을 예측하고, feature branch에서 그 object의 instance segment mask를 찾아낸다. 그리고 이는 동시에 진행되기 위해 category prediction이 진행되는 동안 같이 이미지 전체에 대한 객체의 특징점을 미리 뽑아 둔다. 마직막으로 category 분류된 해당 특징만을 마스크를 만들어 낸다. 
+기존의 모델과 달라진 점은 vanilla head방식을 decoupled head방식로 변경한 것이다. 기존의 모델은 백본에서 convolution 연산을 거쳐 채널축의 깊이가 S^2인 텐서를 만들어 낸다. 이는 같은 object를 중복해서 잡는다던가 의미 없이 아무것도 잡지 못하는 경우가 발생하기도 하므로 S^2를 연산한다는 것은 매우 무겁다. 그래서 head 부분에서 x축과 y축을 따로 예측하는 decoupled head를 적용한 것이다. 그렇게 되면 S^2였던 것을 S로 다운시킬 수 있고 output space를 H×W×2S로 줄일 수 있다. 
